@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["--device", "cuda:1", "--data", "/data/home2/huangchuyin/Graph-WaveNet/data/METR-LA", "--adjdata", "/data/home2/huangchuyin/Graph-WaveNet/data/sensor_graph/adj_mx.pkl", "--num_nodes", "207"],
+            "console": "integratedTerminal"
+        }
+        {
+            "name": "Python: test File",
+            "type": "python",
+            "request": "launch",
+            "program": "test.py",
+            "args": ["--device", "cuda:0", "--data", "/data/home2/huangchuyin/Graph-WaveNet/data/PEMS03", "--adjdata", "/data/home2/huangchuyin/Graph-WaveNet/data/sensor_graph/adj_mx_pems03.pkl", "--num_nodes", "358","--checkpoint", "/data/home2/huangchuyin/GraphwaveNet_DCN/garage/version1-PEMS-BAY/metr_epoch_100_14.85.pth"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
